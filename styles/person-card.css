@@ -1,0 +1,74 @@
+.person-card {
+    position: absolute;
+    top: 350px;
+    left: 5px;
+    width: 300px;
+    height: 290px;
+    padding: 20px 0;
+    color: var(--color-black);
+    background-color: var(--color-white);
+    border-radius: 5px;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    gap: 20px;
+}
+
+.person-card__title {
+    font-size: 15px;
+    font-weight: 600;
+    position: relative;
+}
+
+.person-card__title::after {
+    content: "";
+    position: absolute;
+    height: 1px;
+    top: 25px;
+    left: 0;
+    right: 0;
+    background-color: var(--color-black);
+}
+
+.person-card__preview {
+    border-radius: 50%;
+    width: 75px;
+    height: 75px;
+    overflow: hidden;
+    flex-shrink: 0;
+}
+
+.person-card__preview-img {
+    width: 180%;
+    height: 120%;
+    object-fit: cover;
+    object-position: -25px -13px;
+}
+
+.product-name {
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.person-card__desc {
+    
+}
+
+.product-card__subtitle {
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.product-card__list {
+    list-style: disc;
+    margin: 10px 0 0 0;
+}
+
+.product-card__list-item {
+    font-size: 10px;
+    font-weight: 400;
+    margin: 10px 0 0 0;
+}
