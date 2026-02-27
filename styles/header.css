@@ -7,20 +7,11 @@
     align-items: center;
 }
 
-.header__nav {
-
-}
-
 .header__nav-list {
     display: flex;
     justify-content: center;
     align-items: center;
     column-gap: min(72px, 4vw);
-}
-
-
-.header__nav-item {
-
 }
 
 .header__nav-link {
@@ -67,7 +58,7 @@
         font-size: 16px;
     }
 
-    .btn {
+   .header__actions .btn {
         width: 120px;
         font-size: 16px;
     }
@@ -77,4 +68,15 @@
     .header__nav-item {
         display: none;
 }
+
+.header__wrapper {
+    padding: 0 0 0 50px;
+}
+}
+
+@media (max-width: 390px) {
+
+   .header__actions .btn {
+        width: 90px;
+    }
 }
